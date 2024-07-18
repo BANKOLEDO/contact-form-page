@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Contact form</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main id="entire-page">
+    <div id="success-message">
+      <div class="check-message">
+        <img src="./assets/images/icon-success-check.svg" alt="success-check-icon" class="success-icon">
+      <p class="message-sent">Message Sent!</p>
+      </div>
+      <p class="appreciation">
+        Thanks for completing the form. We'll be in touch soon!
+      </p>
+    </div>
+    <div id="form-container">
+      <h1 id="form-header">Contact Us</h1>
+      <form>
+        <div class="name-container">
+          <div class="first">
+            <label for="first-name" id="first_name">First Name<span class="star"> *</span></label>
+            <input type="text" name="first-name" id="first-name" class="active focus hover">
+            <p class="required-text">This field is required</p>
+          </div>
+          <div class="last">
+            <label for="last-name" id="last_name">Last Name<span class="star"> *</span></label>
+            <input type="text" name="last-name" id="last-name" class="active focus hover">
+            <p class="required-text">This field is required</p>
+          </div>
+        </div>
+        <div class="email-container">
+          <label for="email" id="email-label">Email Address<span class="star"> *</span></label>
+          <input type="email" name="email" id="email" class="active focus hover">
+          <p class="required-text">Please enter a valid email address</p>
+        </div>
+        <div class="query-container">
+          <p class="query-heading">Query Type<span class="star"> *</span></p>
+            <div class="radio-button">
+              <div class="general-e hover">
+                <input type="radio" name="query" id="general-enquiry" >
+                <label for="general-enquiry"><span class="radio-text">General Enquiry</span></label>
+              </div>
+              <div class="support-r hover">
+                <input type="radio" name="query" id="support-request" class="focus">
+                <label for="support-request"><span class="radio-text">Support Request</span></label>
+              </div>
+            </div>
+          <p class="required-text">Please select a query type</p>
+        </div>
+        <div id="message-container">
+          <label for="message" id="message-label">Message<span class="star"> *</span></label>
+          <textarea name="message" id="message" rows="15" class="hover" ></textarea>
+          <p class="required-text">
+            This field is required
+          </p>
+        </div>
+        <div id="consent-container">
+          <div class="consent-block">
+            <input type="checkbox" id="consent" class="custom-checkbox">
+          <label for="consent" id="consent-label"><span class="consent-text">I consent to being contacted by the team<span class="star"> *</span></span>
+          </label>
+          </div>
+          <p class="required-text">To submit this form, please consent to being contacted
+          </p>
+        </div>
+        <div class="button-container">
+          <button id="submit-button" class="submit-hover-state">Submit
+          </button>
+        </div>
+      </form>
+    </div>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
+      Coded by <a href="#">Bankole David</a>.
+    </div>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>

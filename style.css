@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    /* Primary Colors */
+
+    --green-200-lighter: hsl(148, 38%, 91%);
+    --green-600-medium: hsl(169, 82%, 27%);
+    --green-900-darker: hsl(169, 82%, 15%);
+    --red: hsl(0, 66%, 54%);
+
+    /* Neutral Colors */
+
+    --white: hsl(0, 0%, 100%);
+    --grey-500-medium: hsl(186, 15%, 59%);
+    --grey-900-darker: hsl(187, 24%, 22%);
+}
+
+body {
+    font-family: 'Karla', sans-serif;
+}
+.active:active {
+    border: 1px solid var(--green-600-medium);
+}
+.hover:hover {
+    transform: scale(1.03);
+    border: 1px solid var(--green-600-medium) !important; 
+}
+
+.focus:focus {
+    background: var(--green-200-lighter) !important; 
+}
+
+
+#entire-page {
+    min-width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--green-200-lighter);
+}
+
+#form-container {
+    margin: 1rem 0 2rem 0;
+    width: 22rem;
+    background: var(--white);
+    border-radius: 1rem;
+    padding: 1rem 1.5rem;
+}
+
+#form-header {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: var(--grey-900-darker);
+}
+
+
+#first_name {
+    display: block;
+    margin-bottom: 0.3rem;
+    color: var(--grey-900-darker);
+    font-weight: 600;
+}
+
+.star {
+    color: var(--green-600-medium);
+}
+
+.required-text {
+    display: none;
+    margin: 0.5rem 0;
+    font-size: 0.8rem;
+    color: var(--red);
+}
+
+#first-name {
+    width: 100%;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    border: 1px solid var(--grey-500-medium);
+}
+
+#last_name {
+    display: block;
+    margin-bottom: 0.3rem;
+    color: var(--grey-900-darker);
+    font-weight: 600;
+}
+
+#last-name {
+    width: 100%;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    border: 1px solid var(--grey-500-medium);
+}
+
+#email-label {
+    display: block;
+    margin-bottom: 0.3rem;
+    color: var(--grey-900-darker);
+    font-weight: 600;
+}
+
+#email {
+    width: 100%;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    border: 1px solid var(--grey-500-medium);
+}
+
+.query-heading {
+    display: block;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    color: var(--grey-900-darker);
+    font-weight: 600;
+}
+
+.general-e, .support-r {
+    display: flex;
+    padding: 1rem;
+    border: 1px solid var(--grey-500-medium);
+    border-radius: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.general-e:active, .support-r:active {
+    border: 1px solid var(--green-600-medium);
+}
+
+
+
+#general-enquiry, #support-request {
+    width: 1.3rem;
+    margin-left: 0.6rem;
+}
+
+
+.radio-text {
+    color: var(--grey-900-darker);
+    font-size: 1.2rem;
+    margin-left: 1rem;
+}
+
+
+#message-label {
+    display: block;
+    margin-bottom: 1rem;
+    color: var(--grey-900-darker);
+    font-weight: 600;
+}
+
+#message {
+    width: 100%;
+    border: 1px solid var(--grey-500-medium);
+    border-radius: 0.5rem;
+    resize: none;
+}
+
+.consent-block  {
+    margin-bottom: 2rem;
+    display: flex;
+    align-items: center;
+}
+
+#consent-label {
+    margin-left: 1rem;
+    color: var(--grey-900-darker);
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+}
+
+#submit-button {
+    width: 100%;
+    padding: 1rem;
+    border: none;
+    background-color: var(--green-600-medium);
+    color: var(--white);
+    border-radius: 0.5rem;
+}
+
+#success-message {
+    margin-top: 1rem;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    background: var(--green-600-medium);
+}
+
+.check-message {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.message-sent {
+    margin-left: 0.8rem;
+    color: var(--white);
+}
+
+.appreciation {
+    color: var(--white);
+}
+
+.submit-hover-state:hover {
+    background: var(--green-900-darker) !important;
+}
+.attribution { 
+    font-weight: 800;
+    font-size: 11px; 
+    text-align: center; 
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+.error {
+    border: 1px solid var(--red) !important;
+}
+
+@media (min-width: 950px) {
+    #form-container {
+        width: 45rem;
+    }
+
+    .name-container, .radio-button {
+        display: flex;
+    }
+
+    .first, .last, .general-e, .support-r {
+        width: 50%;
+    }
+
+    .first, .general-e {
+        margin-right: 1rem;
+    }
+}
